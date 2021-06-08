@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="University.App.Views.Forms.PQRSPage"          
+             xmlns:control="clr-namespace:University.App.Controls"
+             xmlns:i18n="clr-namespace:University.App.Helpers"
+             BackgroundColor="{DynamicResource Gray-200}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView BindingContext="{Binding PQRS}">
+            <StackLayout Margin="20.32"
+                         Spacing="0"
+                         VerticalOptions="FillAndExpand">
+
+                <Grid RowSpacing="10"
+                      VerticalOptions="CenterAndExpand">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="{i18n:Translate PQRSPageTypeOfRequest }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <Picker Grid.Row="1"
+                            HorizontalOptions="FillAndExpand"                            
+                            Title="Select type of request"
+                            HorizontalTextAlignment="Center"
+                            BackgroundColor="Transparent"
+                            ItemsSource="{Binding TypeRequests}"
+                            ItemDisplayBinding="{Binding Name}"/>
+
+                    <Label Grid.Row="2"
+                           Text="{i18n:Translate PQRSPageName }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="3"
+                                             Placeholder="Name"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"/>
+
+                    <Label Grid.Row="4"
+                           Text="{i18n:Translate PQRSPageSurname }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="5"
+                                             Placeholder="Surname"
+                                             Keyboard="Text"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"/>
+
+                    <Label Grid.Row="6"
+                           Text="{i18n:Translate PQRSPageDirection }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="7"
+                                             Placeholder="Direction"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"/>
+
+                    <Label Grid.Row="8"
+                           Text="{i18n:Translate PQRSPagePhone }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="9"
+                                             Placeholder="Phone"
+                                             Keyboard="Telephone"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"/>
+
+                    <Label Grid.Row="10"
+                           Text="{i18n:Translate PQRSPageEmail }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="11"
+                                             Placeholder="Email"
+                                             Keyboard="Email"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"
+                                             Text="{Binding Email}"/>
+
+                    <Label Grid.Row="12"
+                           Text="{i18n:Translate PQRSPageMessage }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <control:BorderlessEntry Grid.Row="13"
+                                             Placeholder="Message"
+                                             HorizontalTextAlignment="Center"
+                                             BackgroundColor="Transparent"
+                                             PlaceholderColor="{DynamicResource Gray-700}"
+                                             TextColor="{DynamicResource Gray-900}"
+                                             Style="{StaticResource EntryStyle}"/>
+
+                    <Label Grid.Row="14" 
+                           Text="{i18n:Translate PQRSPageRateOurSevice }"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           Style="{StaticResource LabelStyle}"
+                           TextColor="{DynamicResource Gray-900}"/>
+
+                    <Picker Grid.Row="15"
+                            HorizontalOptions="FillAndExpand"                            
+                            Title="Select"
+                            HorizontalTextAlignment="Center"
+                            BackgroundColor="Transparent"
+                            ItemsSource="{Binding RateServices}"
+                            ItemDisplayBinding="{Binding Point}"/>
+
+                    <Button Grid.Row="16"
+                            Margin="0,16"
+                            Text="{i18n:Translate PQRSPageSend }"
+                            Style="{StaticResource ButtonStyle}"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
