@@ -198,4 +198,31 @@
   <data name="RegisterPageSingIn" xml:space="preserve">
     <value>Sing in</value>
   </data>
+  <data name="PQRSAcceptable" xml:space="preserve">
+    <value>Acceptable</value>
+  </data>
+  <data name="PQRSBad" xml:space="preserve">
+    <value>Bad</value>
+  </data>
+  <data name="PQRSClaim" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="PQRSComplain" xml:space="preserve">
+    <value>Complain</value>
+  </data>
+  <data name="PQRSExcellent" xml:space="preserve">
+    <value>Excellent</value>
+  </data>
+  <data name="PQRSPetition" xml:space="preserve">
+    <value>Petition</value>
+  </data>
+  <data name="PQRSRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="PQRSSuggestion" xml:space="preserve">
+    <value>Suggestion</value>
+  </data>
+  <data name="PQRSWell" xml:space="preserve">
+    <value>Well</value>
+  </data>
 </root>

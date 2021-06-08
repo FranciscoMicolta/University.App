@@ -196,6 +196,51 @@ namespace University.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acceptable.
+        /// </summary>
+        public static string PQRSAcceptable {
+            get {
+                return ResourceManager.GetString("PQRSAcceptable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bad.
+        /// </summary>
+        public static string PQRSBad {
+            get {
+                return ResourceManager.GetString("PQRSBad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Claim.
+        /// </summary>
+        public static string PQRSClaim {
+            get {
+                return ResourceManager.GetString("PQRSClaim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complain.
+        /// </summary>
+        public static string PQRSComplain {
+            get {
+                return ResourceManager.GetString("PQRSComplain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Excellent.
+        /// </summary>
+        public static string PQRSExcellent {
+            get {
+                return ResourceManager.GetString("PQRSExcellent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Direction.
         /// </summary>
         public static string PQRSPageDirection {
@@ -273,6 +318,42 @@ namespace University.App.Resources {
         public static string PQRSPageTypeOfRequest {
             get {
                 return ResourceManager.GetString("PQRSPageTypeOfRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Petition.
+        /// </summary>
+        public static string PQRSPetition {
+            get {
+                return ResourceManager.GetString("PQRSPetition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular.
+        /// </summary>
+        public static string PQRSRegular {
+            get {
+                return ResourceManager.GetString("PQRSRegular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suggestion.
+        /// </summary>
+        public static string PQRSSuggestion {
+            get {
+                return ResourceManager.GetString("PQRSSuggestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Well.
+        /// </summary>
+        public static string PQRSWell {
+            get {
+                return ResourceManager.GetString("PQRSWell", resourceCulture);
             }
         }
         

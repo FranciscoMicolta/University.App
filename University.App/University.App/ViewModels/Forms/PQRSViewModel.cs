@@ -59,7 +59,7 @@ namespace University.App.ViewModels.Forms
                 new RateService { Point = "Bad" },
                 new RateService { Point = "Regular" },
                 new RateService { Point = "Well" },
-                new RateService { Point = "Accetable" },
+                new RateService { Point = "Acceptable" },
                 new RateService { Point = "Excellent" }
             };
         }

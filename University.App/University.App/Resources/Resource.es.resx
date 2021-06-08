@@ -148,7 +148,7 @@
     <value>Conócenos</value>
   </data>
   <data name="AboutPageSeeMore" xml:space="preserve">
-    <value>Ver mas </value>
+    <value>Ver más </value>
   </data>
   <data name="CreateNewAccount" xml:space="preserve">
     <value>Crear una nueva cuenta</value>
@@ -193,9 +193,36 @@
     <value>Registrar</value>
   </data>
   <data name="RegisterPageSingIn" xml:space="preserve">
-    <value>Ingresar </value>
+    <value>Iniciar sesión</value>
   </data>
   <data name="PQRSPageSend" xml:space="preserve">
     <value>Enviar</value>
+  </data>
+  <data name="PQRSAcceptable" xml:space="preserve">
+    <value>Aceptable</value>
+  </data>
+  <data name="PQRSBad" xml:space="preserve">
+    <value>Mala</value>
+  </data>
+  <data name="PQRSClaim" xml:space="preserve">
+    <value>Reclamo</value>
+  </data>
+  <data name="PQRSComplain" xml:space="preserve">
+    <value>Queja</value>
+  </data>
+  <data name="PQRSExcellent" xml:space="preserve">
+    <value>Excelente</value>
+  </data>
+  <data name="PQRSPetition" xml:space="preserve">
+    <value>Peteición</value>
+  </data>
+  <data name="PQRSRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="PQRSSuggestion" xml:space="preserve">
+    <value>Sugerencia</value>
+  </data>
+  <data name="PQRSWell" xml:space="preserve">
+    <value>Bueno</value>
   </data>
 </root>

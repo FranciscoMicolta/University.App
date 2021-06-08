@@ -154,7 +154,7 @@ namespace University.App.ViewModels.Forms
                     Application.Current.MainPage = new MasterPage();
                 }
                 else
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
 
                 this.IsRunning = false;
                 this.IsEnabled = true;

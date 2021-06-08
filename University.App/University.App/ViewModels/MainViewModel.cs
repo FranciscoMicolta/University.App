@@ -13,6 +13,7 @@ namespace University.App.ViewModels
         public AboutViewModel About { get; set; }
         public PQRSViewModel PQRS { get; set; }
         public CoursesViewModel Courses { get; set; }
+        public ChangePasswordViewModel ChangePassword { get; set; }
 
         #region Constructors
         public MainViewModel()
@@ -53,6 +54,12 @@ namespace University.App.ViewModels
                     Icon = "ic_exit_to_app",
                     PageName = "ProfilePage",
                     Title = "Profile"
+                },
+                new MenuItemViewModel
+                {
+                    Icon = "ic_exit_to_app",
+                    PageName = "ChangePasswordPage",
+                    Title = "Change Password"
                 },
                 new MenuItemViewModel
                 {

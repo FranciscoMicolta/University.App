@@ -54,6 +54,11 @@ namespace University.App.ViewModels.Menu
                 MainViewModel.GetInstance().About = new AboutViewModel();
                 await App.Navigator.PushAsync(new AboutPage());
             }
+            else if (this.PageName.Equals("ChangePasswordPage"))
+            {
+                MainViewModel.GetInstance().ChangePassword = new ChangePasswordViewModel();
+                await App.Navigator.PushAsync(new ChangePasswordPage());
+            }
         }
         #endregion
     }

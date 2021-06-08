@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using University.App.Helpers;
 using University.App.Views.Forms;
 using University.BL.DTOs;
 using University.BL.Services.Implements;
@@ -62,6 +65,56 @@ namespace University.App.ViewModels.Forms
         #endregion
 
         #region Methods
+        public static bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                // Normalize the domain
+                email = Regex.Replace(email, @"(@)(.+)$", DomainMapper,
+                                      RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                // Examines the domain part of the email and normalizes it.
+                string DomainMapper(Match match)
+                {
+                    // Use IdnMapping class to convert Unicode domain names.
+                    var idn = new IdnMapping();
+
+                    // Pull out and process domain name (throws ArgumentException on invalid)
+                    string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                    return match.Groups[1].Value + domainName;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            try
+            {
+                return Regex.IsMatch(email,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        async void RegisterUser()
+        {
+            MainViewModel.GetInstance().Login = new LoginViewModel();
+            Application.Current.MainPage = new RegisterPage();
+        }
+
         async void LoginUser()
         {
             MainViewModel.GetInstance().Register = new RegisterViewModel();
@@ -80,7 +133,7 @@ namespace University.App.ViewModels.Forms
                     this.IsRunning = false;
                     this.IsEnabled = true;
 
-                    await Application.Current.MainPage.DisplayAlert("Notification ","No internet connection", "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, Languages.NoInternetConnection, Languages.Accept);
                     return;
                 }
 
@@ -89,7 +142,7 @@ namespace University.App.ViewModels.Forms
                     this.IsRunning = false;
                     this.IsEnabled = true;
 
-                    await Application.Current.MainPage.DisplayAlert("Notification ", "The fields are required", "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, Languages.FieldsRequired, Languages.Accept);
                     return;
                 }
 
@@ -108,13 +161,13 @@ namespace University.App.ViewModels.Forms
 
                 if (responseDTO.Code == 200)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Notification", "Register succesfull", "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, "Register succesfull", Languages.Accept);
                     Application.Current.MainPage = new LoginPage();
                     this.IsRunning = false;
                     this.IsEnabled = true;
                 }
                 else
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
 
                 this.IsRunning = false;
                 this.IsEnabled = true;
@@ -124,7 +177,7 @@ namespace University.App.ViewModels.Forms
                 this.IsRunning = false;
                 this.IsEnabled = true;
 
-                await Application.Current.MainPage.DisplayAlert("Notification ", ex.Message, "Accept");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Accept);
             }
         }
         #endregion
