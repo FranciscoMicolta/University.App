@@ -219,10 +219,64 @@
   <data name="PQRSRegular" xml:space="preserve">
     <value>Regular</value>
   </data>
+  <data name="PQRSWell" xml:space="preserve">
+    <value>Well</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangedPassword" xml:space="preserve">
+    <value>Changed Password</value>
+  </data>
+  <data name="ChangedPasswordSuccessfully" xml:space="preserve">
+    <value>The password was changed successfully</value>
+  </data>
+  <data name="ChangedThePassword" xml:space="preserve">
+    <value>Changed the password</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>From the gallery</value>
+  </data>
+  <data name="MenuPageChangedPassword" xml:space="preserve">
+    <value>Changed Password</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegisterSuccessfull" xml:space="preserve">
+    <value>Register successfull</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>Save password</value>
+  </data>
+  <data name="TakePicture" xml:space="preserve">
+    <value>Take a new picture</value>
+  </data>
+  <data name="TheProcessSuccessfull" xml:space="preserve">
+    <value>The process is successfull</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="WhereTakePhoto" xml:space="preserve">
+    <value>Where are you going to take the photo?</value>
+  </data>
   <data name="PQRSSuggestion" xml:space="preserve">
     <value>Suggestion</value>
   </data>
-  <data name="PQRSWell" xml:space="preserve">
-    <value>Well</value>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SelectTypeRequest" xml:space="preserve">
+    <value>Select type of request</value>
   </data>
 </root>

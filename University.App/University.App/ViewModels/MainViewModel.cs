@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using University.App.Helpers;
 using University.App.ViewModels.Forms;
 using University.App.ViewModels.Menu;
 
@@ -35,7 +36,7 @@ namespace University.App.ViewModels
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "AboutPage",
-                    Title = "About"
+                    Title = Languages.MenuPageAbout
                 },
                 new MenuItemViewModel
                 {
@@ -53,19 +54,19 @@ namespace University.App.ViewModels
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "ProfilePage",
-                    Title = "Profile"
+                    Title = Languages.MenuPageProfile
                 },
                 new MenuItemViewModel
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "ChangePasswordPage",
-                    Title = "Change Password"
+                    Title = Languages.MenuPageChangedPassword
                 },
                 new MenuItemViewModel
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "LoginPage",
-                    Title = "Log out"
+                    Title = Languages.MenuPageLogOut
                 }              
             };
         }

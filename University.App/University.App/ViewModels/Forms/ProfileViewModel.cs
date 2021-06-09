@@ -2,6 +2,7 @@
 using Plugin.Media.Abstractions;
 using System;
 using System.IO;
+using University.App.Helpers;
 using University.BL.DTOs;
 using University.BL.Services.Implements;
 using Xamarin.Forms;
@@ -75,11 +76,11 @@ namespace University.App.ViewModels.Forms
                     }
                 }
                 else
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Notification", ex.Message, "Accept");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Accept);
             }
         }
 
@@ -109,13 +110,13 @@ namespace University.App.ViewModels.Forms
                     true);
 
                 if (responseDTO.Code == 200)
-                    await Application.Current.MainPage.DisplayAlert("Notification", "The process is successful", "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, Languages.TheProcessSuccessfull, Languages.Accept);
                 else
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Notification", ex.Message, "Accept");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Accept);
             }
         }
 
@@ -125,18 +126,18 @@ namespace University.App.ViewModels.Forms
             {
                 await CrossMedia.Current.Initialize();
 
-                var source = await Application.Current.MainPage.DisplayActionSheet("Where are you going to take the photo?",
-                    "Accept",
+                var source = await Application.Current.MainPage.DisplayActionSheet(Languages.WhereTakePhoto,
+                    Languages.Accept,
                     null,
-                    "From the gallery",
-                    "Take a new picture");
+                    Languages.FromGallery,
+                    Languages.TakePicture);
 
-                if (source.Equals("Accept"))
+                if (source.Equals(Languages.Accept))
                 {
                     this._file = null;
                     return;
                 }
-                else if (source.Equals("Take a new picture"))
+                else if (source.Equals(Languages.TakePicture))
                 {
                     this._file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
                     {
@@ -159,7 +160,7 @@ namespace University.App.ViewModels.Forms
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Notification", ex.Message, "Accept");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Accept);
             }
         }
         #endregion

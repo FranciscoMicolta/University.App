@@ -97,6 +97,51 @@ namespace University.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changed Password.
+        /// </summary>
+        public static string ChangedPassword {
+            get {
+                return ResourceManager.GetString("ChangedPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password was changed successfully.
+        /// </summary>
+        public static string ChangedPasswordSuccessfully {
+            get {
+                return ResourceManager.GetString("ChangedPasswordSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changed the password.
+        /// </summary>
+        public static string ChangedThePassword {
+            get {
+                return ResourceManager.GetString("ChangedThePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm password.
+        /// </summary>
+        public static string ConfirmPassword {
+            get {
+                return ResourceManager.GetString("ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create a new account.
         /// </summary>
         public static string CreateNewAccount {
@@ -120,6 +165,15 @@ namespace University.App.Resources {
         public static string FieldsRequired {
             get {
                 return ResourceManager.GetString("FieldsRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From the gallery.
+        /// </summary>
+        public static string FromGallery {
+            get {
+                return ResourceManager.GetString("FromGallery", resourceCulture);
             }
         }
         
@@ -160,6 +214,15 @@ namespace University.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Changed Password.
+        /// </summary>
+        public static string MenuPageChangedPassword {
+            get {
+                return ResourceManager.GetString("MenuPageChangedPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log Out.
         /// </summary>
         public static string MenuPageLogOut {
@@ -178,6 +241,15 @@ namespace University.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New password.
+        /// </summary>
+        public static string NewPassword {
+            get {
+                return ResourceManager.GetString("NewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No internet connection.
         /// </summary>
         public static string NoInternetConnection {
@@ -192,6 +264,24 @@ namespace University.App.Resources {
         public static string Notification {
             get {
                 return ResourceManager.GetString("Notification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Old password.
+        /// </summary>
+        public static string OldPassword {
+            get {
+                return ResourceManager.GetString("OldPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
             }
         }
         
@@ -376,11 +466,83 @@ namespace University.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Register successfull.
+        /// </summary>
+        public static string RegisterSuccessfull {
+            get {
+                return ResourceManager.GetString("RegisterSuccessfull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save password.
+        /// </summary>
+        public static string SavePassword {
+            get {
+                return ResourceManager.GetString("SavePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string Select {
+            get {
+                return ResourceManager.GetString("Select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select type of request.
+        /// </summary>
+        public static string SelectTypeRequest {
+            get {
+                return ResourceManager.GetString("SelectTypeRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take a new picture.
+        /// </summary>
+        public static string TakePicture {
+            get {
+                return ResourceManager.GetString("TakePicture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The process is successfull.
+        /// </summary>
+        public static string TheProcessSuccessfull {
+            get {
+                return ResourceManager.GetString("TheProcessSuccessfull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to University.
         /// </summary>
         public static string University {
             get {
                 return ResourceManager.GetString("University", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string Username {
+            get {
+                return ResourceManager.GetString("Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Where are you going to take the photo?.
+        /// </summary>
+        public static string WhereTakePhoto {
+            get {
+                return ResourceManager.GetString("WhereTakePhoto", resourceCulture);
             }
         }
     }

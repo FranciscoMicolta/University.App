@@ -219,10 +219,64 @@
   <data name="PQRSRegular" xml:space="preserve">
     <value>Regular</value>
   </data>
+  <data name="PQRSWell" xml:space="preserve">
+    <value>Bueno</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ChangedPassword" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="ChangedThePassword" xml:space="preserve">
+    <value>Cambiar la contraseña</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirmar contraseña</value>
+  </data>
+  <data name="ChangedPasswordSuccessfully" xml:space="preserve">
+    <value>La contraseña fue cambiada exitosamente</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>De la galeria</value>
+  </data>
+  <data name="MenuPageChangedPassword" xml:space="preserve">
+    <value>Cambia la contraseña</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nueva contraseña</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Contraseña actual</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="RegisterSuccessfull" xml:space="preserve">
+    <value>Registro exitoso</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>Guardar contraseña</value>
+  </data>
+  <data name="TakePicture" xml:space="preserve">
+    <value>Toma una nueva foto</value>
+  </data>
+  <data name="TheProcessSuccessfull" xml:space="preserve">
+    <value>El proceso fue exitoso</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="WhereTakePhoto" xml:space="preserve">
+    <value>De donde quieres escoger la nueva foto?</value>
+  </data>
   <data name="PQRSSuggestion" xml:space="preserve">
     <value>Sugerencia</value>
   </data>
-  <data name="PQRSWell" xml:space="preserve">
-    <value>Bueno</value>
+  <data name="Select" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="SelectTypeRequest" xml:space="preserve">
+    <value>Seleccionar tipo de solicitud</value>
   </data>
 </root>

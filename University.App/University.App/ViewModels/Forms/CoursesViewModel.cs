@@ -53,9 +53,9 @@ namespace University.App.ViewModels.Forms
                 if (!connection)
                 {
                     this.IsRefreshing = false;
-                    await Application.Current.MainPage.DisplayAlert("Notification",
-                        "No internet connection",
-                        "Cancel");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification,
+                        Languages.NoInternetConnection,
+                        Languages.Cancel);
                     return;
                 }
 
@@ -70,7 +70,7 @@ namespace University.App.ViewModels.Forms
             catch (Exception ex)
             {
                 this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert("Notification", ex.Message, "Cancel");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Cancel);
             }
         }
         #endregion

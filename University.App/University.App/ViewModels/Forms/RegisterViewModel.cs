@@ -161,7 +161,7 @@ namespace University.App.ViewModels.Forms
 
                 if (responseDTO.Code == 200)
                 {
-                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, "Register succesfull", Languages.Accept);
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, Languages.RegisterSuccessfull, Languages.Accept);
                     Application.Current.MainPage = new LoginPage();
                     this.IsRunning = false;
                     this.IsEnabled = true;

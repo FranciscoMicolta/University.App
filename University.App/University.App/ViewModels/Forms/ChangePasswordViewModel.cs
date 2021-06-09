@@ -79,14 +79,14 @@ namespace University.App.ViewModels.Forms
                 if (responseDTO.Code == 200)
                 {
                     this.User = (UserDTO)responseDTO.Data;
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
                 }
                 else
-                    await Application.Current.MainPage.DisplayAlert("Notification", responseDTO.Message, "Accept");
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, responseDTO.Message, Languages.Accept);
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Notification", ex.Message, "Accept");
+                await Application.Current.MainPage.DisplayAlert(Languages.Notification, ex.Message, Languages.Accept);
             }
         }
 
@@ -132,7 +132,7 @@ namespace University.App.ViewModels.Forms
 
                 if (responseDTO.Code == 200)
                 {
-                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, "The password was changed successfully", Languages.Accept);
+                    await Application.Current.MainPage.DisplayAlert(Languages.Notification, Languages.ChangedPasswordSuccessfully, Languages.Accept);
                     Application.Current.MainPage = new LoginPage();
                     this.IsRunning = false;
                     this.IsEnabled = true;

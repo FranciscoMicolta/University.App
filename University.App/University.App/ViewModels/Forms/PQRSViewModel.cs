@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using University.App.Helpers;
 
 namespace University.App.ViewModels.Forms
 {
@@ -45,10 +46,10 @@ namespace University.App.ViewModels.Forms
         {
             this.TypeRequests = new List<TypeRequest>
             {
-                new TypeRequest { Name = "Petition" },
-                new TypeRequest { Name = "Complain" },
-                new TypeRequest { Name = "Claim" },
-                new TypeRequest { Name = "Suggestion" }
+                new TypeRequest { Name = Languages.PQRSPetition },
+                new TypeRequest { Name = Languages.PQRSComplain},
+                new TypeRequest { Name = Languages.PQRSClaim },
+                new TypeRequest { Name = Languages.PQRSSuggestion }
             };
         }
 
@@ -56,11 +57,11 @@ namespace University.App.ViewModels.Forms
         {
             this.RateServices = new List<RateService>
             {
-                new RateService { Point = "Bad" },
-                new RateService { Point = "Regular" },
-                new RateService { Point = "Well" },
-                new RateService { Point = "Acceptable" },
-                new RateService { Point = "Excellent" }
+                new RateService { Point = Languages.PQRSBad},
+                new RateService { Point = Languages.PQRSRegular},
+                new RateService { Point = Languages.PQRSWell },
+                new RateService { Point = Languages.PQRSAcceptable },
+                new RateService { Point = Languages.PQRSExcellent}
             };
         }
         #endregion

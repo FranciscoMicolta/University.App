@@ -70,7 +70,7 @@
                     </control:BorderlessEntry>
 
                     <control:BorderlessEntry Grid.Row="3"
-                                             Placeholder="Password"
+                                             Placeholder="{i18n:Translate Password}"
                                              IsPassword="True"
                                              PlaceholderColor="{DynamicResource Gray-700}"
                                              TextColor="{DynamicResource Gray-900}"
@@ -78,7 +78,7 @@
                                              Text="{Binding Password}"/>
 
                     <control:BorderlessEntry Grid.Row="4"
-                                             Placeholder="Confirm Password"
+                                             Placeholder="{i18n:Translate ConfirmPassword}"
                                              IsPassword="True"
                                              PlaceholderColor="{DynamicResource Gray-700}"
                                              TextColor="{DynamicResource Gray-900}"

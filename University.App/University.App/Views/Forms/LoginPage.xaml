@@ -54,7 +54,7 @@
                            Keyboard="Email"/>-->
 
                     <control:BorderlessEntry Grid.Row="2"
-                                             Placeholder="Username"
+                                             Placeholder="{i18n:Translate Username}}"
                                              Keyboard="Email"
                                              PlaceholderColor="{DynamicResource Gray-700}"
                                              TextColor="{DynamicResource Gray-900}"
@@ -77,7 +77,7 @@
                            IsPassword="True"/>-->
 
                     <control:BorderlessEntry Grid.Row="3"
-                                             Placeholder="Password"
+                                             Placeholder="{i18n:Translate Password}"
                                              IsPassword="True"
                                              PlaceholderColor="{DynamicResource Gray-700}"
                                              TextColor="{DynamicResource Gray-900}"
